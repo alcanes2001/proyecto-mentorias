@@ -1,33 +1,22 @@
 <template>
-  <div class="contactos-view">
-    <h1>Contactos</h1>
-    <p>Esta es la vista de contactos.</p>
+  <div>
+    <NavbarSection />
+    <ContactosSection />
+    <FooterSection />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'ContactosView',
-  data() {
-    return {
-      // Datos iniciales
-    };
-  },
-  methods: {
-    // Métodos
-  },
-  computed: {
-    // Propiedades computadas
-  },
-  mounted() {
-    // Código que se ejecuta al montar el componente
-  }
-};
+  import NavbarSection from '@/components/NavbarSection.vue';
+  import ContactosSection from '@/components/ContactosSection.vue';
+  import FooterSection from '@/components/FooterSection.vue';
+
+  export default {
+    name: 'ConocenosView',
+    components: {
+      NavbarSection,
+      ContactosSection,
+      FooterSection,
+    },
+  };
 </script>
-
-<style scoped>
-.contactos-view {
-  padding: 20px;
-}
-</style>
-

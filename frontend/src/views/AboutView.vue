@@ -1,15 +1,22 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <NavbarSection />
+    <AboutSection />
+    <FooterSection />
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script>
+  import NavbarSection from '@/components/NavbarSection.vue';
+  import AboutSection from '@/components/AboutSection.vue';
+  import FooterSection from '@/components/FooterSection.vue';
+
+  export default {
+    name: 'AboutView',
+    components: {
+      NavbarSection,
+      AboutSection,
+      FooterSection,
+    },
+  };
+</script>
